@@ -9,9 +9,7 @@ const App = ()  => {
   return (
     <Container fluid={true}>
       <Header />
-      <hr />
       <Content />
-      <hr />
       <Footer />
     </Container>
   );

@@ -1,6 +1,5 @@
 import React from 'react';
 import { 
-  Container, 
   Carousel,
   CarouselItem,
   CarouselControl,
@@ -56,33 +55,31 @@ class FeaturedCarousel extends React.Component {
     ));
 
     return (
-      <Container>
-        <Carousel
-          activeIndex={this.state.activeIndex}
-          next={this.next}
-          previous={this.previous}
-        >
-          <CarouselIndicators 
-            items={this.state.items} 
-            activeIndex={this.state.activeIndex} 
-            onClickHandler={this.goToIndex} 
-          />
+      <Carousel
+        activeIndex={this.state.activeIndex}
+        next={this.next}
+        previous={this.previous}
+      >
+        <CarouselIndicators 
+          items={this.state.items} 
+          activeIndex={this.state.activeIndex} 
+          onClickHandler={this.goToIndex} 
+        />
 
-          {slides}
+        {slides}
 
-          <CarouselControl 
-            direction="prev" 
-            directionText="Previous" 
-            onClickHandler={this.previous} 
-          />
+        <CarouselControl 
+          direction="prev" 
+          directionText="Previous" 
+          onClickHandler={this.previous} 
+        />
 
-          <CarouselControl 
-            direction="next" 
-            directionText="Next" 
-            onClickHandler={this.next} 
-          />
-        </Carousel>
-      </Container>
+        <CarouselControl 
+          direction="next" 
+          directionText="Next" 
+          onClickHandler={this.next} 
+        />
+      </Carousel>
     );
   }
 
