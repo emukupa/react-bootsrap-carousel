@@ -6,7 +6,7 @@ class Content extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Container fluid="true">
+        <Container fluid={true}>
           <FeaturedCarousel />
         </Container>
         <Container>
